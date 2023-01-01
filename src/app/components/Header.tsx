@@ -5,6 +5,7 @@ import { FC } from 'react';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 import { useSearchContext } from '../contexts/SearchContext';
 import { LoginButton } from './Buttons.component';
+import Image from 'next/image';
 
 interface HeaderProps {}
 
@@ -23,7 +24,7 @@ const Header: FC<HeaderProps> = ({}) => {
         href={'/'}
         className="mb-3 flex flex-col text-center justify-center items-center"
       >
-        <img
+        <Image
           src="/images/logo.jpeg"
           alt="AbjXplore Logo"
           height={72}

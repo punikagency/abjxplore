@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import socials from '../../data/social_media.json';
+import Image from 'next/image';
 
 interface FooterProps {}
 
@@ -11,7 +12,7 @@ const Footer: FC<FooterProps> = ({}) => {
       <div className="flex gap-4 items-center justify-center">
         {socials.map((social, index) => (
           <Link key={index} target="_blank" href={`${social.link}`}>
-            <img
+            <Image
               src={`/images/icons/${social.logo}`}
               alt={`"${social.name} logo"`}
               height={18}

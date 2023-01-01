@@ -2,6 +2,7 @@ import { FC } from 'react';
 import MainContainer from '../components/MainContainer';
 
 import foodsData from '../../data/foods.json';
+import Image from 'next/image';
 
 interface FoodPageProps {}
 
@@ -17,10 +18,12 @@ const FoodPage: FC<FoodPageProps> = ({}) => {
           {foodsData.map((food, index) => (
             <div className="p-2 lg:p-6 rounded-xl shadow-md" key={index}>
               <div className="h-56 lg:h-96 w-full relative mb-5 rounded-xl overflow-hidden">
-                <img
+                <Image
                   className="object-cover h-full w-full absolute top-0 left-0"
                   src={`/images/foods/${food.img}`}
                   alt={`${food.name} image`}
+                  height={280}
+                  width={300}
                 />
               </div>
               <h2 className="text-xl">{food.name}</h2>
