@@ -6,14 +6,20 @@
     "link": "/"
   },
   {
+    "name": "Arts",
+    "img": "Art.jpg",
+    "desc": "",
+    "link": "/"
+  },
+  {
     "name": "Fashion",
-    "img": "",
+    "img": "fashion.jpeg",
     "desc": "",
     "link": "/"
   },
   {
     "name": "Culture",
-    "img": "",
+    "img": "culture.jpeg",
     "desc": "",
     "link": "/"
   },
@@ -24,7 +30,19 @@
     "link": "/"
   },
   {
+    "name": "Properties",
+    "img": "",
+    "desc": "",
+    "link": "/"
+  },
+  {
     "name": "Events",
+    "img": "",
+    "desc": "",
+    "link": "/"
+  },
+  {
+    "name": "Worship Centres",
     "img": "",
     "desc": "",
     "link": "/"
@@ -43,7 +61,7 @@
   },
   {
     "name": "Places",
-    "img": "",
+    "img": "places.webp",
     "desc": "",
     "link": "/places"
   },

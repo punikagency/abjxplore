@@ -19,13 +19,24 @@ export default function Home() {
               <Link
                 href={category.link}
                 key={index}
-                className={`h-32 grid items-center text-center w-32 rounded-full bg-slate-50 text-xl overflow-hidden ${
+                className={`h-max grid w-full bg-slate-50 text-xl overflow-hidden p-2 md:p-4 rounded-xl ${
                   category.link.length > 3
                     ? 'border-none bg-slate-50 shadow-md '
                     : ''
                 }`}
               >
-                <p>{category.name}</p>
+                <div className="relative h-64 mb-4 overflow-hidden rounded-xl">
+                  <img
+                    src={`${
+                      category.img.length > 1
+                        ? `/images/categories/${category.img}`
+                        : '/images/foods/Afang-Soup.webp'
+                    }`}
+                    alt={`${category.name} image`}
+                    className="object-cover absolute top-0 left-0 h-full w-full"
+                  />
+                </div>
+                <p className="text-xl">{category.name}</p>
               </Link>
             ))}
           </div>
