@@ -13,10 +13,10 @@ const FoodPage: FC<FoodPageProps> = ({}) => {
       </h2>
 
       <section className="mb-8">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-2 lg:gap-6">
           {foodsData.map((food, index) => (
-            <div className="p-6 rounded-xl shadow-md" key={index}>
-              <div className="h-96 w-full relative mb-5 rounded-xl overflow-hidden">
+            <div className="p-2 lg:p-6 rounded-xl shadow-md" key={index}>
+              <div className="h-56 lg:h-96 w-full relative mb-5 rounded-xl overflow-hidden">
                 <img
                   className="object-cover h-full w-full absolute top-0 left-0"
                   src={`/images/foods/${food.img}`}
