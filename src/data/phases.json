@@ -20,7 +20,8 @@
       },
       {
         "name": "Maitama",
-        "description": "Maitama is an upscale residential and diplomatic district in Phase 1. It is home to many embassies, high-end residences, and diplomatic missions."
+        "description": "Maitama is an upscale residential and diplomatic district in Phase 1. It is home to many embassies, high-end residences, and diplomatic missions.",
+        "gMap_link": "https://www.google.com/maps?ll=9.09,7.493&z=14&t=m&hl=en-US&gl=US&mapclient=embed"
       },
       {
         "name": "Wuse",
@@ -152,7 +153,9 @@
       },
       {
         "name": "Kubwa",
-        "description": "Kubwa is a suburban district in Abuja, known for its residential communities, markets, and access to major highways."
+        "description": "Kubwa is a suburban district in Abuja, known for its residential communities, markets, and access to major highways.",
+        "map_link": "https://satellites.pro/Google/Kubwa_Suburban_District_map",
+        "gMap_link": "https://www.google.com/maps/@9.1555,7.3205,14z?hl=en-US&entry=ttu"
       },
       {
         "name": "Kuje",

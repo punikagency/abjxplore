@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Abacha",
+    "img": "abacha.webp"
+  },
+  {
+    "name": "Jollof Rice",
+    "img": "jollof-rice.webp"
+  },
+  {
+    "name": "Masa",
+    "img": "masa.png"
+  },
+  {
+    "name": "Kilishi",
+    "img": "kilishi.png"
+  },
+  {
+    "name": "Kuli Kuli",
+    "img": "kuli-kuli.png"
+  },
+  {
+    "name": "Beans and Plaintain",
+    "img": "beans-and-plaintain.webp"
+  },
+  {
+    "name": "Suya",
+    "img": "Suya.jpeg"
+  },
+  {
+    "name": "Tuwo Shinkafa",
+    "img": "Tuwo-Shinkafa.webp"
+  }
+]
