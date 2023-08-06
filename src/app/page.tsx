@@ -6,19 +6,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <div className="mb-3">
-        <img
-          src="/images/logo.jpeg"
-          alt="AbjXplore Logo"
-          height={72}
-          width={72}
-        />
-      </div>
-
-      <h2 className="text-3xl pb-6">AbjXplore</h2>
-
       <section className="mb-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category, index) => (
             <div
               key={index}
