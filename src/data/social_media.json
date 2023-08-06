@@ -1,14 +1,22 @@
 [
   {
     "name": "instagram",
-    "logo": "instagram.svg"
+    "logo": "instagram.svg",
+    "link": "https://instagram.com/abjxplore"
   },
   {
     "name": "tiktok",
-    "logo": "tiktok.svg"
+    "logo": "tiktok.svg",
+    "link": "https://tiktok.com/@abjxplor"
   },
   {
     "name": "twitter",
-    "logo": "twitter.svg"
+    "logo": "twitter.svg",
+    "link": "https://twitter.com/abjxplore"
+  },
+  {
+    "name": "youtube",
+    "logo": "youtube.svg",
+    "link": "https://youtube.com/@abjxplore"
   }
 ]

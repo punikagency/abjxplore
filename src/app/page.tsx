@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import categories from '../data/categories.json';
 import socials from '../data/social_media.json';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,16 +22,17 @@ export default function Home() {
       </section>
 
       <div className="mt-12">
-        <h3 className="mb-6">Follow us on social media:</h3>
+        <h3 className="mb-4">Follow us on social media:</h3>
         <div className="flex gap-4 items-center justify-center">
           {socials.map((social, index) => (
-            <img
-              key={index}
-              src={`/images/icons/${social.logo}`}
-              alt={`"${social.name} logo"`}
-              height={18}
-              width={18}
-            />
+            <Link key={index} target="_blank" href={`${social.link}`}>
+              <img
+                src={`/images/icons/${social.logo}`}
+                alt={`"${social.name} logo"`}
+                height={18}
+                width={18}
+              />
+            </Link>
           ))}
         </div>
       </div>
