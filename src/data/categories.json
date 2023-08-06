@@ -2,51 +2,61 @@
   {
     "name": "Jobs",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Fashion",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Culture",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Real Estates",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Events",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Foods",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Plazas",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "Places",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/places"
   },
   {
     "name": "Restuarants",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   },
   {
     "name": "People",
     "img": "",
-    "desc": ""
+    "desc": "",
+    "link": "/"
   }
 ]

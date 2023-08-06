@@ -9,12 +9,13 @@ export default function Home() {
       <section className="mb-6">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category, index) => (
-            <div
+            <Link
+              href={category.link}
               key={index}
               className="h-28 grid items-center text-center w-28 rounded-full border bg-slate-50 overflow-hidden"
             >
               <p>{category.name}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
