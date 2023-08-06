@@ -1,9 +1,10 @@
 import categories from '../data/categories.json';
 import Link from 'next/link';
+import MainContainer from './components/MainContainer';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center px-6 md:px-24 py-6">
+    <MainContainer>
       <section className="mb-6">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category, index) => (
@@ -17,6 +18,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-    </main>
+    </MainContainer>
   );
 }

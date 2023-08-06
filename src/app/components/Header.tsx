@@ -6,7 +6,7 @@ interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
   return (
-    <header className="flex  items-center px-6 md:px-24 py-6 justify-between">
+    <header className="sticky top-0 shadow-sm bg-white flex items-center px-6 md:px-24 py-4 justify-between">
       <div className="search-icon w-16">
         <FaSearch />
       </div>
