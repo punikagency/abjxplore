@@ -1,0 +1,171 @@
+[
+  {
+    "name": "Phase 1",
+    "districts": [
+      {
+        "name": "Asokoro",
+        "description": "Asokoro is a district located in Phase 1 of Abuja. It is known for its high-end residential areas and the Aso Rock Presidential Complex."
+      },
+      {
+        "name": "Central Area",
+        "description": "The Central Area is the commercial and administrative heart of Abuja, situated in Phase 1. It houses government offices, financial institutions, and cultural landmarks."
+      },
+      {
+        "name": "Garki",
+        "description": "Garki is a central district in Phase 1 of Abuja. It is known for its commercial and residential areas, as well as government offices and embassies."
+      },
+      {
+        "name": "Guzape",
+        "description": "Guzape is a district located in Phase 1, known for its mix of residential and commercial spaces."
+      },
+      {
+        "name": "Maitama",
+        "description": "Maitama is an upscale residential and diplomatic district in Phase 1. It is home to many embassies, high-end residences, and diplomatic missions."
+      },
+      {
+        "name": "Wuse",
+        "description": "Wuse is a bustling district in Phase 1, characterized by shopping malls, markets, and entertainment centers. It is a major commercial hub."
+      }
+    ]
+  },
+  {
+    "name": "Phase 2",
+    "districts": [
+      {
+        "name": "Apo",
+        "description": "Apo is a district located in Phase 2 of Abuja. It features a mix of residential and commercial areas."
+      },
+      {
+        "name": "Dutse",
+        "description": "Dutse is a suburban district in Phase 2, known for its residential communities, markets, and access to major highways."
+      },
+      {
+        "name": "Dakibiyu",
+        "description": "Dakibiyu is a district in Phase 2, characterized by its residential neighborhoods and local amenities."
+      },
+      {
+        "name": "Duboyi",
+        "description": "Duboyi is a district situated in Phase 2, known for its residential and commercial developments."
+      },
+      {
+        "name": "Durumi",
+        "description": "Durumi is a district located in Phase 2, featuring a mix of residential and commercial properties."
+      },
+      {
+        "name": "Gaduwa",
+        "description": "Gaduwa is a developing district in Phase 2, known for its residential communities and planned infrastructure."
+      },
+      {
+        "name": "Games Village",
+        "description": "Games Village is a district within Phase 2, offering a combination of residential and recreational facilities."
+      },
+      {
+        "name": "Gudu",
+        "description": "Gudu is a district in Phase 2, known for its residential neighborhoods and commercial centers."
+      },
+      {
+        "name": "Jabi",
+        "description": "Jabi is a popular district in Phase 2, featuring commercial areas, a lake, and recreational facilities."
+      },
+      {
+        "name": "Jahi",
+        "description": "Jahi is a developing district in Phase 2, known for its residential and commercial projects."
+      },
+      {
+        "name": "Kado",
+        "description": "Kado is a district situated in Phase 2, featuring a mix of residential and commercial properties."
+      },
+      {
+        "name": "Katampe",
+        "description": "Katampe is a district located in Phase 2, known for its residential neighborhoods and planned developments."
+      },
+      {
+        "name": "Kukwaba",
+        "description": "Kukwaba is a district in Phase 2, characterized by its residential communities and local amenities."
+      },
+      {
+        "name": "Mabushi",
+        "description": "Mabushi is a district in Phase 2, known for its mix of residential and commercial areas."
+      },
+      {
+        "name": "Utako",
+        "description": "Utako is a district located in Phase 2, known for its commercial and residential areas."
+      },
+      {
+        "name": "Wuye",
+        "description": "Wuye is a district in Phase 2, featuring a combination of residential and commercial properties."
+      }
+    ]
+  },
+  {
+    "name": "Phase 3",
+    "districts": [
+      {
+        "name": "Galadimawa",
+        "description": "Galadimawa is a developing district in Phase 3 of Abuja, known for its housing projects and planned infrastructure."
+      },
+      {
+        "name": "Gwarinpa",
+        "description": "Gwarinpa is a district located in Phase 3, known for its numerous housing estates and recreational facilities."
+      },
+      {
+        "name": "Kabusa",
+        "description": "Kabusa is a district situated in Phase 3, characterized by its residential neighborhoods and local amenities."
+      },
+      {
+        "name": "Karmo",
+        "description": "Karmo is a district in Phase 3, featuring a mix of residential and commercial properties."
+      },
+      {
+        "name": "Life Camp",
+        "description": "Life Camp is a district located in Phase 3, known for its residential neighborhoods and planned developments."
+      },
+      {
+        "name": "Lokogoma",
+        "description": "Lokogoma is a district in Phase 3, known for its residential communities and local amenities."
+      },
+      {
+        "name": "Nbora",
+        "description": "Nbora is a district situated in Phase 3, characterized by its residential neighborhoods and local amenities."
+      }
+    ]
+  },
+  {
+    "name": "Phase 4",
+    "districts": [
+      {
+        "name": "Idu",
+        "description": "Idu is a district located in Phase 4 of Abuja, featuring a mix of residential and commercial properties."
+      },
+      {
+        "name": "Karsana",
+        "description": "Karsana is a developing district in Phase 4, known for its housing projects and planned infrastructure."
+      }
+    ]
+  },
+  {
+    "name": "Suburbs",
+    "districts": [
+      {
+        "name": "Dawaki",
+        "description": "Dawaki is a suburb of Abuja, characterized by its residential neighborhoods and local amenities."
+      },
+      {
+        "name": "Kubwa",
+        "description": "Kubwa is a suburban district in Abuja, known for its residential communities, markets, and access to major highways."
+      },
+      {
+        "name": "Kuje",
+        "description": "Kuje is a suburban district located in the outskirts of Abuja, known for its mix of residential and agricultural areas."
+      },
+      {
+        "name": "Lugbe",
+        "description": "Lugbe is a suburban district in Abuja, known for its residential communities and proximity to the Nnamdi Azikiwe International Airport."
+      },
+      {
+        "name": "Mpape",
+        "description": "Mpape is a suburb of Abuja, characterized by its residential neighborhoods and local amenities."
+      }
+    ]
+  }
+]

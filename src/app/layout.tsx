@@ -2,6 +2,9 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Marck_Script } from 'next/font/google';
 import Link from 'next/link';
+import { FaSearch } from 'react-icons/fa';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const inter = Marck_Script({
   weight: '400',
@@ -26,20 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} `}>
-        <header className="flex flex-col items-center px-24 py-12">
-          <Link href={'/'} className="mb-3">
-            <img
-              src="/images/logo.jpeg"
-              alt="AbjXplore Logo"
-              height={72}
-              width={72}
-            />
-          </Link>
-
-          <h2 className="text-3xl pb-4">AbjXplore</h2>
-        </header>
+      <body className={`${inter.className} relative h-full min-h-screen`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
