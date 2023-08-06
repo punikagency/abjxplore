@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { FaSearch } from 'react-icons/fa';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
+import { SearchProvider } from './contexts/SearchContext';
 
 const inter = Marck_Script({
   weight: '400',
@@ -30,9 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} relative h-full min-h-screen`}>
-        <Header />
-        {children}
-        <Footer />
+        <SearchProvider>
+          <Header />
+          <SearchBar />
+          {children}
+          <Footer />
+        </SearchProvider>
       </body>
     </html>
   );

@@ -1,14 +1,22 @@
+'use client';
+
 import Link from 'next/link';
 import { FC } from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaTimes } from 'react-icons/fa';
+import { useSearchContext } from '../contexts/SearchContext';
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
+  const { isActive, setActive } = useSearchContext();
+
   return (
-    <header className="sticky top-0 shadow-sm bg-white flex items-center px-6 md:px-24 py-4 justify-between">
-      <div className="search-icon w-16">
-        <FaSearch />
+    <header className="sticky top-0 shadow-sm bg-white flex items-center px-6 md:px-24 h-32 md:h-36 justify-between">
+      <div
+        className="search-icon w-16 cursor-pointer hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-xl transition-all"
+        onClick={() => setActive(!isActive)}
+      >
+        {isActive ? <FaTimes size={20} /> : <FaSearch size={20} />}
       </div>
       <Link
         href={'/'}

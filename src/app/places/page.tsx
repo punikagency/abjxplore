@@ -13,7 +13,9 @@ const PlacePage: FC<PlacePageProps> = ({}) => {
       </h2>
       {phases.map((phase, index) => (
         <div key={index} className="mb-12">
-          <h2 className="text-xl mb-3">{phase.name}</h2>
+          <h2 className="text-2xl mb-3 md:ml-3 w-max border-transparent border-b-yellow-300 border-b-4">
+            {phase.name}
+          </h2>
 
           <div className="grid grid-cols-2 justify-between gap-6 md:grid-cols-3 lg:grid-cols-4 ">
             {phase.districts.map((district, index) => (
