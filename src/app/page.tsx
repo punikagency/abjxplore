@@ -19,7 +19,11 @@ export default function Home() {
               <Link
                 href={category.link}
                 key={index}
-                className="h-32 grid items-center text-center w-32 rounded-full border bg-slate-50 text-xl overflow-hidden"
+                className={`h-32 grid items-center text-center w-32 rounded-full bg-slate-50 text-xl overflow-hidden ${
+                  category.link.length > 3
+                    ? 'border-none bg-slate-50 shadow-md '
+                    : ''
+                }`}
               >
                 <p>{category.name}</p>
               </Link>
