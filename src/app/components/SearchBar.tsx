@@ -23,7 +23,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
 
   return (
     <div
-      className={`search-bar ${
+      className={`search-bar z-30 ${
         isActive ? 'active' : 'inactive'
       }  -mt-1 bg-white px-6 py-3 md:px-24 w-full shadow-md sticky top-32 md:top-36`}
     >

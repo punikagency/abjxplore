@@ -1,8 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Marck_Script } from 'next/font/google';
-import Link from 'next/link';
-import { FaSearch } from 'react-icons/fa';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
