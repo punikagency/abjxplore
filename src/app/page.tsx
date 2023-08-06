@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import categories from '../data/categories.json';
 import socials from '../data/social_media.json';
 import Link from 'next/link';
