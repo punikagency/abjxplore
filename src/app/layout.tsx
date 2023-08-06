@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} `}>
-        <header className="flex flex-col items-center p-24">
+        <header className="flex flex-col items-center px-24 py-12">
           <Link href={'/'} className="mb-3">
             <img
               src="/images/logo.jpeg"
@@ -37,7 +37,7 @@ export default function RootLayout({
             />
           </Link>
 
-          <h2 className="text-3xl pb-6">AbjXplore</h2>
+          <h2 className="text-3xl pb-4">AbjXplore</h2>
         </header>
         {children}
       </body>
