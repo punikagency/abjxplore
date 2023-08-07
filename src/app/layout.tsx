@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: 'Abuja Exploration',
   description:
     '💯 No. 1 Platform to explore, connect and invest in FCT, Abuja.',
+  verification: {
+    google: 'fiAH29qg_LSAiJEpHjHZqQKZs6cvWV07thpRN3qrF90',
+  },
 
   // Faviocons
   icons: {
