@@ -1,4 +1,5 @@
 // create a client component
+
 'use client';
 // you are using id=GTM-xxxx. no need for gtmId
 import { pageview } from '@/lib/gtm';
@@ -9,6 +10,8 @@ import { useEffect } from 'react';
 export default function Analytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  const GTM_ID = 'GTM-NTKW573T';
 
   useEffect(() => {
     if (pathname) {
@@ -24,7 +27,7 @@ export default function Analytics() {
     <>
       <noscript>
         <iframe
-          src={`https://www.googletagmanager.com/ns.html?id=GTM-NTKW573T`}
+          src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
           height="0"
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
@@ -39,7 +42,7 @@ export default function Analytics() {
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-NTKW573T');
+          })(window,document,'script','dataLayer', ${GTM_ID});
   `,
         }}
       />
