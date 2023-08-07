@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 import { useSearchContext } from '../contexts/SearchContext';
+import { LoginButton } from './Buttons.component';
 
 interface HeaderProps {}
 
@@ -30,12 +31,8 @@ const Header: FC<HeaderProps> = ({}) => {
         />
         <h2 className="text-3xl pb-4">AbjXplore</h2>
       </Link>
-      <Link
-        href={'/'}
-        className="user-login px-6 py-2 bg-yellow-700 text-gray-100 rounded-xl"
-      >
-        Sign in
-      </Link>
+
+      <LoginButton />
     </header>
   );
 };
