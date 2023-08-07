@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { SearchProvider } from './contexts/SearchContext';
+import Analytics from './components/Analytics';
 
 const inter = Marck_Script({
   weight: '400',
@@ -29,6 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Analytics />
       <body className={`${inter.className} relative h-full min-h-screen`}>
         <SearchProvider>
           <Header />
