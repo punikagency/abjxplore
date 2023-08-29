@@ -4,7 +4,7 @@ import { FC } from 'react';
 interface FoodShowPageProps {}
 
 const FoodShowPage: FC<FoodShowPageProps> = ({}) => {
-  return <MainContainer>FoodShowPage</MainContainer>;
+  return <MainContainer>FoodShowPage View</MainContainer>;
 };
 
 export default FoodShowPage;
