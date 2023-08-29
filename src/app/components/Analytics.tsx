@@ -1,7 +1,4 @@
-// create a client component
-
 'use client';
-// you are using id=GTM-xxxx. no need for gtmId
 import { pageview } from '@/lib/gtm';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';

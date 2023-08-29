@@ -1,33 +1,28 @@
 [
   {
-    "name": "Jobs",
-    "img": "",
+    "name": "News",
+    "img": "news.jpeg",
     "desc": "",
     "link": "/"
   },
   {
-    "name": "Arts",
-    "img": "Art.jpg",
+    "name": "Videos",
+    "img": "videos.jpeg",
     "desc": "",
     "link": "/"
   },
   {
-    "name": "Fashion",
-    "img": "fashion.jpeg",
+    "name": "Documentaries",
+    "img": "documentary.jpeg",
     "desc": "",
     "link": "/"
   },
   {
-    "name": "Culture",
-    "img": "culture.jpeg",
+    "name": "Places",
+    "img": "places.webp",
     "desc": "",
-    "link": "/"
-  },
-  {
-    "name": "Real Estates & Properties",
-    "img": "real-estate.jpeg",
-    "desc": "",
-    "link": "/"
+    "link": "/places",
+    "sub": ["worship centers", "plazas", "bakeries", "restuarants"]
   },
   {
     "name": "Events",
@@ -36,39 +31,22 @@
     "link": "/"
   },
   {
-    "name": "Worship Centres",
-    "img": "",
-    "desc": "",
-    "link": "/"
-  },
-  {
-    "name": "Foods",
-    "img": "",
-    "desc": "",
-    "link": "/foods"
-  },
-  {
-    "name": "Plazas",
-    "img": "plazas.png",
-    "desc": "",
-    "link": "/"
-  },
-  {
-    "name": "Places",
-    "img": "places.webp",
-    "desc": "",
-    "link": "/places"
-  },
-  {
-    "name": "Restuarants",
-    "img": "restuarants.jpeg",
-    "desc": "",
-    "link": "/"
-  },
-  {
     "name": "People",
     "img": "people.jpeg",
     "desc": "",
     "link": "/"
+  },
+  {
+    "name": "Jobs",
+    "img": "jobs.jpeg",
+    "desc": "",
+    "link": "/"
+  },
+  {
+    "name": "Culture",
+    "img": "culture.jpeg",
+    "desc": "",
+    "link": "/",
+    "sub": ["arts", "foods", "fashion"]
   }
 ]

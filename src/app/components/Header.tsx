@@ -13,16 +13,10 @@ const Header: FC<HeaderProps> = ({}) => {
   const { isActive, setActive } = useSearchContext();
 
   return (
-    <header className="sticky top-0 shadow-sm z-50 bg-white flex items-center px-6 md:px-24 h-32 md:h-36 justify-between">
-      <div
-        className="search-icon w-16 cursor-pointer hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-xl transition-all"
-        onClick={() => setActive(!isActive)}
-      >
-        {isActive ? <FaTimes size={20} /> : <FaSearch size={20} />}
-      </div>
+    <header className="sticky top-0 shadow-sm z-50 bg-white flex items-center px-6 md:px-24 h-max justify-between">
       <Link
         href={'/'}
-        className="mb-3 flex flex-col text-center justify-center items-center"
+        className="flex flex-col text-center justify-center items-center"
       >
         <Image
           src="/images/logo.jpeg"
@@ -30,10 +24,17 @@ const Header: FC<HeaderProps> = ({}) => {
           height={72}
           width={72}
         />
-        <h2 className="text-3xl pb-4">AbjXplore</h2>
       </Link>
 
-      <LoginButton />
+      <div className="flex gap-4">
+        <div
+          className="search-icon w-16 cursor-pointer hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-xl transition-all m-0"
+          onClick={() => setActive(!isActive)}
+        >
+          {isActive ? <FaTimes size={20} /> : <FaSearch size={20} />}
+        </div>
+        <LoginButton />
+      </div>
     </header>
   );
 };

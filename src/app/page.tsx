@@ -7,27 +7,20 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className="py-4 bg-yellow-50 md:text-xl ">
-        <Marquee
-          text="💯 No. 1 platform for exploring, connecting and investing in the Federal Capital Territory, Abuja."
-          speed={2}
-        />
-      </div>
-
       <MainContainer>
         <section className="mb-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between">
             {categories.map((category, index) => (
               <Link
-                href={category.link}
+                href={`${category.link}?showDialog=y`}
                 key={index}
-                className={`h-max grid w-full bg-slate-50 text-xl overflow-hidden p-2 md:p-4 rounded-xl ${
+                className={`h-max grid w-full relative bg-slate-50 text-xl overflow-hidden rounded-xl ${
                   category.link.length > 3
                     ? 'border-none bg-slate-50 shadow-md '
                     : ''
                 }`}
               >
-                <div className="relative h-64 mb-4 overflow-hidden rounded-xl">
+                <div className="relative h-64 overflow-hidden rounded-xl">
                   <Image
                     src={`${
                       category.img.length > 1
@@ -41,7 +34,9 @@ export default function Home() {
                     className="object-cover absolute top-0 left-0 h-full w-full"
                   />
                 </div>
-                <p className="text-xl">{category.name}</p>
+                <p className="text-xl absolute h-full z-20 text-white p-4 flex items-end w-full bg-black bg-opacity-60 top-0 left-0">
+                  {category.name}
+                </p>
               </Link>
             ))}
           </div>
