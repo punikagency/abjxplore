@@ -36,14 +36,13 @@ export default function RootLayout({
       <Analytics />
       <body className={`${inter.className} relative h-full min-h-screen`}>
         <SearchProvider>
-          <div className="py-4 bg-yellow-50 md:text-xl ">
+          <Header />
+          <div className="py-2 bg-yellow-50 md:text-lg ">
             <Marquee
               text="💯 No. 1 platform for exploring, connecting and investing in the Federal Capital Territory, Abuja."
               speed={2}
             />
           </div>
-
-          <Header />
           <SearchBar />
           {children}
           <Footer />
