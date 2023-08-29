@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import { FaSearch, FaTimes } from 'react-icons/fa';
-import { useSearchContext } from '../contexts/SearchContext';
-import { LoginButton } from './Buttons.component';
+import { useSearchContext } from '@/contexts/SearchContext';
+import { LoginButton } from '@/components/(global)/Buttons.component';
 import Image from 'next/image';
 
 interface HeaderProps {}

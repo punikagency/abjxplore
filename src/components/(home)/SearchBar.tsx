@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import { useSearchContext } from '../contexts/SearchContext';
+import { useSearchContext } from '../../contexts/SearchContext';
 
 interface SearchBarProps {}
 

@@ -1,7 +1,6 @@
-import categories from '../data/categories.json';
+import categories from '@/data/categories.json';
 import Link from 'next/link';
-import MainContainer from './components/MainContainer';
-import Marquee from './components/Marquee';
+import MainContainer from '@/components/(global)/MainContainer';
 import Image from 'next/image';
 
 export default function Home() {

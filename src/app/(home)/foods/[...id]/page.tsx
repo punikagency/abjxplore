@@ -1,4 +1,4 @@
-import MainContainer from '@/app/components/MainContainer';
+import MainContainer from '@/app/components/(global)/MainContainer';
 import { FC } from 'react';
 
 interface FoodShowPageProps {}

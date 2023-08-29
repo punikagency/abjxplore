@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import MainContainer from '../components/MainContainer';
+import MainContainer from '@/components/(global)/MainContainer';
 
 interface JobPageProps {}
 

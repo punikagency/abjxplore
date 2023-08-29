@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import MainContainer from '../components/MainContainer';
+import MainContainer from '../../../components/(global)/MainContainer';
 
-import foodsData from '../../data/foods.json';
+import foodsData from '../../../data/foods.json';
 import Image from 'next/image';
 
 interface FoodPageProps {}

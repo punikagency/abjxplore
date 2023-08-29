@@ -1,10 +1,10 @@
 // 'use client';
 
 import { FC } from 'react';
-import MainContainer from '../components/MainContainer';
+import MainContainer from '@/components/(global)/MainContainer';
 
-import phases from '../../data/phases.json';
-import Dialog from '../components/Dialog';
+import phases from '../../../data/phases.json';
+import Dialog from '@/components/(global)/Dialog';
 
 interface PlacePageProps {}
 
