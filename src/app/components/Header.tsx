@@ -14,6 +14,16 @@ const Header: FC<HeaderProps> = ({}) => {
 
   return (
     <header className="sticky top-0 shadow-sm z-50 bg-white flex items-center px-6 md:px-24 h-max justify-between">
+      {/* Search enabler */}
+      <div
+        className="search-icon w-16 cursor-pointer hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-xl transition-all m-0"
+        onClick={() => setActive(!isActive)}
+      >
+        {isActive ? <FaTimes size={20} /> : <FaSearch size={20} />}
+      </div>
+
+      {/* Logo */}
+
       <Link
         href={'/'}
         className="flex flex-col text-center justify-center items-center"
@@ -26,15 +36,9 @@ const Header: FC<HeaderProps> = ({}) => {
         />
       </Link>
 
-      <div className="flex gap-4">
-        <div
-          className="search-icon w-16 cursor-pointer hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-xl transition-all m-0"
-          onClick={() => setActive(!isActive)}
-        >
-          {isActive ? <FaTimes size={20} /> : <FaSearch size={20} />}
-        </div>
-        <LoginButton />
-      </div>
+      {/* Login Button */}
+
+      <LoginButton />
     </header>
   );
 };
