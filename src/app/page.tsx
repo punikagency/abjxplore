@@ -12,7 +12,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-6 justify-between">
             {categories.map((category, index) => (
               <Link
-                href={`${category.link}?showDialog=y`}
+                href={`${category.link}`}
+                target={category.link.includes('https') ? '_blank' : '_self'}
                 key={index}
                 className={`h-max grid w-full relative bg-slate-50 text-xl overflow-hidden rounded-xl ${
                   category.link.length > 3
