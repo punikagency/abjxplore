@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <MainContainer>
         <section className="mb-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 justify-between">
             {categories.map((category, index) => (
               <Link
                 href={`${category.link}?showDialog=y`}
