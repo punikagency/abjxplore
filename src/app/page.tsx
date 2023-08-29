@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <MainContainer>
-        <section className="mb-6">
+        <section className="mb-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between">
             {categories.map((category, index) => (
               <Link
