@@ -1,4 +1,4 @@
-'use server';
+// 'use client';
 
 import { FC } from 'react';
 import MainContainer from '../components/MainContainer';
