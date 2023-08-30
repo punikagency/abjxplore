@@ -3,59 +3,99 @@
 import { FC } from 'react';
 import MainContainer from '@/components/(global)/MainContainer';
 
-import phases from '../../../data/phases.json';
-import Dialog from '@/components/(global)/Dialog';
+import phasesData from '../../../data/phases.json';
 
 interface PlacePageProps {}
 
-const PlacePage: FC<PlacePageProps> = ({}) => {
-  async function onClose() {
-    'use server';
-    console.log('Modal has closed!');
-  }
+interface District {
+  name: string;
+  description: string;
+  gMap_link: string | null;
+  map_link: string | null;
+}
 
-  async function onOk() {
-    'use server';
-    console.log('Ok was clicked');
-  }
+interface Phase {
+  name: string;
+  districts: District[];
+}
+
+const phases: Phase[] = phasesData;
+
+const abujaAreas: District[] = [];
+
+phases.forEach((phase) => {
+  phase.districts.forEach((district) => {
+    abujaAreas.push({
+      name: district.name,
+      description: district.description,
+      gMap_link: district.gMap_link || null,
+      map_link: district.map_link || null,
+    });
+  });
+});
+
+console.log(abujaAreas);
+
+const PlacePage: FC<PlacePageProps> = ({}) => {
+  const allAreas = phasesData.map((phase) => {
+    return { ...phase.districts };
+  });
+
+  console.log(allAreas);
 
   return (
-    <>
-      <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed
-          a, sunt quos, ipsam harum at aliquid nesciunt fugit porro possimus
-          corrupti omnis maiores dolores rem? Hic tenetur fugiat in!
-        </p>
-      </Dialog>
-      <MainContainer>
-        <h2 className="text-2xl md:text-3xl w-full py-6 bg-slate-200 text-center mb-12 rounded-xl">
-          Places
-        </h2>
-        {phases.map((phase, index) => (
-          <div key={index} className="mb-12">
-            <h2 className="text-2xl mb-3 md:ml-3 w-max border-transparent border-b-yellow-300 border-b-4">
-              {phase.name}
-            </h2>
+    <MainContainer>
+      <div className="hero-section w-full h-[60vh] flex flex-col gap-3 justify-center items-center bg-gray-950 text-gray-50 shadow-lg rounded-lg mb-12">
+        <h1 className="text-4xl text-center mb-6">Explore places in Abuja</h1>
 
-            {/* <div className="grid grid-cols-1 justify-center">
-            <CustomCarousel districts={phase.districts} />
-          </div> */}
-
-            <div className="grid grid-cols-2 justify-between gap-6 md:grid-cols-3 lg:grid-cols-4 ">
-              {phase.districts.map((district, index) => (
-                <div
-                  key={index}
-                  className="w-32 h-32 rounded-full grid place-items-center shadow-md bg-slate-50"
-                >
-                  <p className="text-lg"> {district.name}</p>
-                </div>
+        <div
+          className="w-full max-w-xs flex flex-col gap-4"
+          style={{ fontFamily: 'monospace' }}
+        >
+          {/* lga */}
+          <select
+            name=""
+            id=""
+            className="py-2 px-4  bg-transparent border-white border rounded-lg"
+          >
+            {abujaAreas
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((area, index) => (
+                <option value="" key={index}>
+                  {area.name}
+                </option>
               ))}
-            </div>
-          </div>
-        ))}
-      </MainContainer>
-    </>
+          </select>
+
+          {/* Nearest landmark */}
+          <select
+            disabled
+            name=""
+            id=""
+            className="py-2 px-4  bg-transparent border-white border rounded-lg"
+          >
+            <option value="">Nearest landmark</option>
+          </select>
+
+          {/* Button */}
+
+          <button>Start Exploring</button>
+        </div>
+      </div>
+
+      <section>
+        {/* Most popular */}
+        <div className="slider-areas mb-6">
+          <h1 className="text-3xl">Most Popular</h1>
+        </div>
+
+        {/* Best rated */}
+
+        <div className="slider-areas mb-6">
+          <h1 className="text-3xl">Best Rated</h1>
+        </div>
+      </section>
+    </MainContainer>
   );
 };
 
