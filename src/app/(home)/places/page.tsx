@@ -3,7 +3,9 @@
 import { FC } from 'react';
 import MainContainer from '@/components/(global)/MainContainer';
 
-import phasesData from '../../../data/phases.json';
+import phasesData from '@/data/phases.json';
+import placesData from '@/data/places.json';
+import PlaceCard from '@/components/(home)/PlaceCard';
 
 interface PlacePageProps {}
 
@@ -35,12 +37,6 @@ phases.forEach((phase) => {
 });
 
 const PlacePage: FC<PlacePageProps> = ({}) => {
-  const allAreas = phasesData.map((phase) => {
-    return { ...phase.districts };
-  });
-
-  console.log(allAreas);
-
   return (
     <MainContainer>
       <div className="hero-section w-full h-[60vh] flex flex-col gap-3 justify-center items-center bg-gray-950 text-gray-50 shadow-lg rounded-lg mb-12">
@@ -81,16 +77,28 @@ const PlacePage: FC<PlacePageProps> = ({}) => {
         </div>
       </div>
 
-      <section>
+      <section className="mb-24 flex flex-col divide-y-4 space-y-4">
         {/* Most popular */}
-        <div className="slider-areas mb-6">
-          <h1 className="text-3xl">Most Popular</h1>
+        <div className="slider-areas mb-10">
+          <h1 className="text-xl md:text-3xl mb-2 py-3">Most Popular</h1>
+
+          <div className="grid grid-cols-2">
+            {placesData.map((place, index) => (
+              <PlaceCard key={index} place={place} />
+            ))}
+          </div>
         </div>
 
         {/* Best rated */}
 
         <div className="slider-areas mb-6">
-          <h1 className="text-3xl">Best Rated</h1>
+          <h1 className="text-xl md:text-3xl mb-2 py-3">Best Rated</h1>
+
+          <div className="grid grid-cols-2">
+            {placesData.map((place, index) => (
+              <PlaceCard key={index} place={place} />
+            ))}
+          </div>
         </div>
       </section>
     </MainContainer>

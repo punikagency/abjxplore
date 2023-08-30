@@ -1,5 +1,10 @@
 [
   {
-    "name": "Asokoro"
+    "name": "Wilson Foods and Confectioneries",
+    "category": "bakery",
+    "img": "wilson-foods.jpeg",
+    "numVisits": 86,
+    "userRating": 4.6,
+    "link": ""
   }
 ]
