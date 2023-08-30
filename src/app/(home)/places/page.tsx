@@ -34,8 +34,6 @@ phases.forEach((phase) => {
   });
 });
 
-console.log(abujaAreas);
-
 const PlacePage: FC<PlacePageProps> = ({}) => {
   const allAreas = phasesData.map((phase) => {
     return { ...phase.districts };
