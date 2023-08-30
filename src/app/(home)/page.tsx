@@ -34,7 +34,7 @@ export default function Home() {
                     className="object-cover absolute top-0 left-0 h-full w-full"
                   />
                 </div>
-                <p className="text-xl absolute h-full z-20 text-white p-4 flex items-end w-full bg-black bg-opacity-60 top-0 left-0">
+                <p className="text-xl absolute h-full z-20 text-white p-4 flex items-end w-full bg-black bg-opacity-20 top-0 left-0">
                   {category.name}
                 </p>
               </Link>
